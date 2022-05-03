@@ -79,6 +79,7 @@ export const createElements = (authed) => {
       ul.appendChild(li);
 
       const menuItem = document.createElement('a');
+      menuItem.setAttribute('class', key);
       menuItem.setAttribute('class', 'navbar-link btn-in first');
       menuItem.textContent = unauthElements[key];
       menuItem.dataset.section = key;
