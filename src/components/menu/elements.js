@@ -52,7 +52,7 @@ export const createElements = (authed) => {
           createProfilePage(true);
         }
       } else {
-        menuItem.setAttribute('class', 'navbar-link');
+        menuItem.setAttribute('class', 'navbar-link '  + key);
         const menuImg = document.createElement('img');
         menuImg.setAttribute('class', 'menu-logout');
         menuImg.src = 'exit.ico';
@@ -80,7 +80,7 @@ export const createElements = (authed) => {
 
       const menuItem = document.createElement('a');
       menuItem.setAttribute('class', key);
-      menuItem.setAttribute('class', 'navbar-link btn-in first');
+      menuItem.setAttribute('class', 'navbar-link btn-in first ' + key);
       menuItem.textContent = unauthElements[key];
       menuItem.dataset.section = key;
       menuItem.id = `/${key}`;
