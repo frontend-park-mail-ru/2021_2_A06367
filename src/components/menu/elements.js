@@ -44,6 +44,7 @@ export const createElements = (authed) => {
       li.setAttribute('class', 'navbar-item');
       ul.appendChild(li);
       const menuItem = document.createElement('a');
+      menuItem.setAttribute('class', key);
       if (key === 'profile') {
         menuItem.setAttribute('class', 'navbar-link');
         menuItem.id = `/${key}`;
